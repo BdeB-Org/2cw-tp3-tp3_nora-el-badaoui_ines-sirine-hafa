@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffc982;
+    text-align: center;
+}
+
+header{
+    background-color: #ff6868;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+footer{
+    background-color: #ff6868;
+    color:white;
+    padding: 0.5rem;
+    text-align:center;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+#recherche{
+    margin:1rem auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#formChercher{
+    text-align: center;
+}
+
+#resultats {
+    margin:1rem auto;
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
