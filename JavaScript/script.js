@@ -4,6 +4,19 @@ function afficherMerci(event)
     document.getElementById('contenu').innerHTML = '<h2> Merci pour votre commentaire ! </h2>';
 }
 
+function creerNoeud(element){
+    return document.createElement(element)
+}
+
+function append(parent, el){
+    return parent.appendChild(e1);
+}
+
+const books_ul = document.getElementById("");
+const listeLivre = document.getElementById("");
+const url = `https://www.google.apis.com/books/v1/volumes?q=intitle:${encoreURIComponent(query)}&key=AIzaSyBG2uF3x6Cmr9kkPyjoisEZvxjiY14ixmY`;
+
+
 async function chercherLivre(query)
 {
     const url = `https://www.google.apis.com/books/v1/volumes?q=intitle:${encoreURIComponent(query)}&key=AIzaSyBG2uF3x6Cmr9kkPyjoisEZvxjiY14ixmY`;

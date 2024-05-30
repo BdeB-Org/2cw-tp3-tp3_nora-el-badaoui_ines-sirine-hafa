@@ -61,7 +61,7 @@ footer{
 }
 
 h2{
-    bottom: auto;
+    bottom: 6cm;
 }
 
 h1{
@@ -95,4 +95,10 @@ border-radius: 50%;
 width: 100px;
 height: 100px;
 left: 70%;
+}
+
+main{
+    margin: 2rem auto;
+    width: 80%;
+    text-align: center;
 }
