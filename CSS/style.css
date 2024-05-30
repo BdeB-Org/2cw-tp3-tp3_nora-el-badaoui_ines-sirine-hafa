@@ -67,3 +67,20 @@ h2{
 h1{
     bottom: 4cm;
 }
+
+.lien-oval{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 30%;
+    background-color:#ff6868;
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+    line-height: 10px;
+}
+.lien-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
