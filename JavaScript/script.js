@@ -4,21 +4,6 @@ function afficherMerci(event)
     document.getElementById('contenu').innerHTML = '<h2> Merci pour votre commentaire ! </h2>';
 }
 
-const mysql = require('mysql');
-const fetch = require('node-fetch');
-
-const db = mysql.createConnection({
-    host: 'host1',
-    user: 'user1',
-    password: 'abc123',
-    database: 'BDD.sql'
-});
-
-db.connect((err) => {
-    if(err) throw err;
-    console.log('connecté à la BDD');
-});
-
 async function chercherLivre(query)
 {
     const url = `https://www.google.apis.com/books/v1/volumes?q=intitle:${encoreURIComponent(query)}&key=AIzaSyBG2uF3x6Cmr9kkPyjoisEZvxjiY14ixmY`;
