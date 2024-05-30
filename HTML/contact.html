@@ -14,6 +14,21 @@
 <body>
 <h2>Nous contacter</h2>
 <h3>Ce formulaire est à votre disposition pour nous prévenir d'un quelconque problème technique, de nous demander d'ajouter un livre dans la bibliothèque ou pour exprimer votre point de vue sur nos services</h3>
-
+<form id="commentaires">
+    <label for="commentaire-type"> Type de commentaire : </label>
+    <select name="commentaire-type" id="commentaire-type">
+        <option value="probleme"> Problème </option>
+        <option value="suggestion"> Suggestion </option>
+        <option value="avis"> Avis </option>
+    </select>
+    <br><br>
+    <label for="commentaire-texte"> Commentaire : </label>
+    <br>
+    <textarea name="commentaire-texte" id="commentaire-texte" rows="4"
+    cols="50"></textarea>
+    <br><br>
+    <input type="submit" value="Envoyer">
+</form>
+</form>
 </body>
 </html>
