@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacter la bibliothèque</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JavaScript/script.js"></script>
     <nav class="lien-nav"> 
         <a href="contact.html" class="lien-oval">Contact</a>
         <a href="aide.html" class="lien-oval">Aide</a>
@@ -17,7 +18,7 @@
 </header>
 <div id="contenu"> 
 <h3>Ce formulaire est à votre disposition pour nous prévenir d'un quelconque problème technique, de nous demander d'ajouter un livre dans la bibliothèque ou pour exprimer votre point de vue sur nos services</h3>
-<form id="commentaires">
+<form id="commentaires" onsubmit="afficherMerci(event)">
     <label for="commentaire-type"> Type de commentaire : </label>
     <select name="commentaire-type" id="commentaire-type">
         <option value="probleme"> Problème </option>
@@ -32,7 +33,7 @@
     <br><br>
     <input type="submit" value="Envoyer">
 </form>
-</form>
+
 </div>
 </body>
 </html>
