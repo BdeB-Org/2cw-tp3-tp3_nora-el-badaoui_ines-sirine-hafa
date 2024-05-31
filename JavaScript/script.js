@@ -1,13 +1,3 @@
-const books = [
-    {
-        id:1,
-        title: "The Great Adventure",
-        author_id: "1",
-        publication_date:'2020-01-01',
-        description:"",
-        cover_image_url:"url"
-    }
-]
 
 
 async function chercherLivre(query)
