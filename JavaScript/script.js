@@ -4,29 +4,23 @@ function afficherMerci(event)
     document.getElementById('contenu').innerHTML = '<h2> Merci pour votre commentaire ! </h2>';
 }
 
-async function chercherLivre(query)
-{
-    const url = `https://www.google.apis.com/books/v1/volumes?q=intitle:${encoreURIComponent(query)}&key=AIzaSyBG2uF3x6Cmr9kkPyjoisEZvxjiY14ixmY`;
-    const reponse = await fetch(url);
-    const data = await Response.json();
+fetch('http://localhost:8080/books')
+.then(response => response.json())
+.then(data => {
+const books = data.books;
+const booksContainer = document.getElementById('books-container');
+books.forEach(book =>
+    {
+        const bookElement = document.createElement('div');
+bookElement.innerHTML = `<h3>${book.title}</h3>
+<p> Id auteur: ${book.author_id} </p>
+<p> Date de publication: ${book.publication_date}</p>
+<p> Description: ${book.description}</p>
+<img src="${book.cover_image_url}" alt="${book.title}" style="width:100px;height:150px;">`
 
-    const livres = data.items.map((item) => ({
+booksContainer.appendChild(book)
+})
 
 
-title: item.volumeInfo.title,
-author: item.volumeInfo.authors ? item.volumeInfo.authors[0] : "",
-publicationDate: item.volumeInfo.publicationDate || "",
-description: item.volumeInfo.description || "",
-coverImageURL: item.volumeInfo.imageLinks?.thumbnail || ""
-}))
 
-
-const sql = 'INSERT INTO books (title,author,publication_date,description,cover_image_url) VALUES ?';
-const values = books.map((book) => [book.title, book.author, book.publicationDate,book.description, book.coverImageURL]);
-db.query(sql,[values],(err,result) => {
-    if(err) throw err;
-    console.log(`inséré ${resultat.affectedRows} colonnes dans la BDD`)
-});
-
-}
-
+})
