@@ -14,7 +14,10 @@ function append(parent, el){
 
 const books_ul = document.getElementById("");
 const listeLivre = document.getElementById("");
-const url = `https://www.google.apis.com/books/v1/volumes?q=intitle:${encoreURIComponent(query)}&key=AIzaSyBG2uF3x6Cmr9kkPyjoisEZvxjiY14ixmY`;
+const urlLivre ="http://localhost:8080/ords/hr2/livres";
+
+
+
 
 
 async function chercherLivre(query)
@@ -34,8 +37,6 @@ coverImageURL: item.volumeInfo.imageLinks?.thumbnail || ""
 }))
 
 
-
-
 const sql = 'INSERT INTO books (title,author,publication_date,description,cover_image_url) VALUES ?';
 const values = books.map((book) => [book.title, book.author, book.publicationDate,book.description, book.coverImageURL]);
 db.query(sql,[values],(err,result) => {
@@ -45,4 +46,3 @@ db.query(sql,[values],(err,result) => {
 
 }
 
-chercherLivre('Fleur');
