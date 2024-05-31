@@ -1,23 +1,13 @@
-function afficherMerci(event)
-{
-    
-    document.getElementById('contenu').innerHTML = '<h2> Merci pour votre commentaire ! </h2>';
-}
-
-function creerNoeud(element){
-    return document.createElement(element)
-}
-
-function append(parent, el){
-    return parent.appendChild(e1);
-}
-
-const books_ul = document.getElementById("");
-const listeLivre = document.getElementById("");
-const urlLivre ="http://localhost:8080/ords/hr2/livres";
-
-
-
+const books = [
+    {
+        id:1,
+        title: "The Great Adventure",
+        author_id: "1",
+        publication_date:'2020-01-01',
+        description:"",
+        cover_image_url:"url"
+    }
+]
 
 
 async function chercherLivre(query)
