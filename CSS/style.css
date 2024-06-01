@@ -107,3 +107,12 @@ main{
     text-align: center;
     
 }
+
+p {
+    font-size: 1.2rem;
+    bottom:5cm;
+}
+
+aide{
+    bottom: 10%;
+}
