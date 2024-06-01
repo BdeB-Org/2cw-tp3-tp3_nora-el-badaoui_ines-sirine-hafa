@@ -62,7 +62,8 @@ footer{
 }
 
 h2{
-    bottom: 6cm;
+    margin-top: 2rem;
+    
 }
 
 h1{
@@ -113,6 +114,6 @@ p {
     bottom:5cm;
 }
 
-aide{
+.aide{
     bottom: 10%;
 }
