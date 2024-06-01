@@ -118,6 +118,12 @@ p {
     bottom:5cm;
 }
 
-.aide{
-    bottom: 10%;
+#aide{
+    position: absolute;
+    bottom: 25cm;
+    left: 11%;
+    margin:auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
 }
