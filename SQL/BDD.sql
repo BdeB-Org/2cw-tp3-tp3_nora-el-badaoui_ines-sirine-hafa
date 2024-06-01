@@ -5,7 +5,7 @@ CREATE TABLE books (
     publication_date DATE,
     description TEXT,
     cover_image_url VARCHAR(255),
-    FOREIGN KET (author_id) REFERENCES authors(id)
+    FOREIGN KEY (author_id) REFERENCES authors(id)
 );
 
 

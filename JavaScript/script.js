@@ -18,7 +18,6 @@ formChercher.addEventListener('submit', (e) => {
       const books = data.books;
 
 
-
       if (books.length > 0) {
         books.forEach((book) => {
           const bookElement = document.createElement('div');
