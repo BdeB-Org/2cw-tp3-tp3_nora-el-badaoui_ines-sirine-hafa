@@ -70,6 +70,10 @@ h1{
     bottom: 4cm;
 }
 
+h3{
+    margin-top: 2rem;
+}
+
 .lien-oval{
     display: inline-block;
     padding: 5px 10px;
